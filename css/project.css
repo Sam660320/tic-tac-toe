@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: yellow;
+     
+}
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size)* .9);
+}
+.gameBoard {
+    width: 100vw;
+    height: 100vw;
+    border-width: 5px;
+    border-color: black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center; 
+
+
+}
+.square {
+    width: var(--cell-size);
+    height: var(--cell-size); 
+    background-color: black ;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square.top {
+    border-top: none;
+}
+.square.right {
+    border-right: none;
+}
+.square.bottom {
+    border-bottom: none;
+}
+.square.left {
+    border-left: none;
+}
