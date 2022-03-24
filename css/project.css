@@ -45,8 +45,22 @@ h1, h2, h3 {
     border-left: none;
 }
 .x {
-    font-size: 50px;
+    font-size: 60px;
 }
 .o {
     font-size: 70px;
+}
+.winner {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
+#reload {
+    background-color: blueviolet;
+    color: aquamarine;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 150px;
+    height: 30px;
 }
