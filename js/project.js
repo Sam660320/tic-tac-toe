@@ -24,13 +24,16 @@ $('.square').click(function(){
             if ($(this).text() === "x"){
                 $('#wPlayer').text("The winner is x");
                 p1S++;
-                $('#p1Score').text(p1S)
+                $('#p1Score').text(p1S);
+                play = false;
+                return;
             } else if ($(this).text() === "o") {
                 $('#wPlayer').text("The winner is o");
                 p2S++;
                 $('#p2Score').text(p2S);
+                play = false;
+                return;
             }
-            play = false;
         }
         if (turn ===10) {
             $('#wPlayer').text("It's a draw");
