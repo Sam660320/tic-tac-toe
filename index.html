@@ -2,28 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/project.css">
+    <title>Tic Tac Toe</title>
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
-    <div class="gameBoard">
-        <div class="square top left"></div>
-        <div class="square top"></div>
-        <div class="square top right"></div>
-        <div class="square left"></div>
-        <div class="square"></div>
-        <div class="square right"></div>
-        <div class="square bottom left"></div>
-        <div class="square bottom"></div>
-        <div class="square bottom right"></div>
-
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <h3>Player 1 Score: <span id="p1Score">0</span></h3>
+        <h3>Player 2 Score: <span id="p2Score">0</span></h3>
+        <h3>Tie <span id="tie">0</span></h3>
+        <h2>Turn: Player <span id="turn">1</span></h2>
+    </header>
+    
+    <div class="game-page">
+        <div class="gameBoard" id="board">
+            <div class="square top left"></div>
+            <div class="square top"></div>
+            <div class="square top right"></div>
+            <div class="square left"></div>
+            <div class="square"></div>
+            <div class="square right"></div>
+            <div class="square bottom left"></div>
+            <div class="square bottom"></div>
+            <div class="square bottom right"></div>
+            </div>
     </div>
-    <div class="winning-message" id="winningMessage">
-        <div data-winning-message-text></div>
-        <button id="restartButton">Restart</button>
+
+    <div class="result-page">
+        <div class="winningMessage"></div>
+        <button class="replay">Replay</button>
     </div>
 
     <script src="js/jquery.js"></script>

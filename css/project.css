@@ -4,19 +4,16 @@
     padding: 0;
 }
 body {
-    display: flex;
     background-color: lightblue;
      
 }
-:root {
-    --cell-size: 100px;
-    --mark-size: calc(var(--cell-size)* .9);
+h1, h2, h3 {
+    margin-top: 30px;
+    text-align: center;
 }
+
 .gameBoard {
-    width: 100vw;
-    height: 100vw;
-    border-width: 5px;
-    border-color: black;
+    margin-top: 30px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -27,9 +24,9 @@ body {
 
 }
 .square {
-    width: var(--cell-size);
-    height: var(--cell-size); 
-    background-color: black ;
+    width: 150px;
+    height: 150px; 
+    background-color: rgb(161, 223, 164) ;
     border: 1px solid white;
     display: flex;
     justify-content: center;
@@ -46,4 +43,10 @@ body {
 }
 .square.left {
     border-left: none;
+}
+.x {
+    font-size: 50px;
+}
+.o {
+    font-size: 70px;
 }
