@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box; 
-    margin: 0;
-    padding: 0;
 }
 body {
     background-color: lightblue;
@@ -15,13 +13,8 @@ h1, h2, h3 {
 .gameBoard {
     margin-top: 30px;
     display: grid;
-    justify-content: center;
-    align-content: center;
+    justify-content: center; 
     grid-template-columns: repeat(3, auto);
-    justify-items: center;
-    align-items: center; 
-
-
 }
 .square {
     width: 150px;
