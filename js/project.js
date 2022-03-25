@@ -20,7 +20,7 @@ $('.square').click(function(){
             $('#turn').text("2");
         }
         
-        if (checkWin() !== "") {
+        if (checkWin()) {
             if ($(this).text() === "x"){
                 $('#wPlayer').text("The winner is x");
                 p1S++;
@@ -48,10 +48,10 @@ $('.square').click(function(){
 $('#reload').click(function(){
     $(".square").removeClass('x');
     $(".square").removeClass('o');
-    turn = 1;
     $('.square').text("");
     $('#wPlayer').text("");
-    play=true
+    turn = 1;
+    play=true;
 })
 
 
